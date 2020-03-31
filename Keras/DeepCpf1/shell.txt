@@ -1,0 +1,22 @@
+
+conda create --name Tensorflow141 python=2.7.12 numpy==1.14.5 scipy==1.1.0 tensorflow==1.4.1
+
+#conda activate Tensorflow141
+source activate Tensorflow141
+
+#
+cd /Paired-Library-DeepCRISPR.info/DeepCas9
+python ./DeepCas9_TestCode.py
+
+#
+cd /Paired-Library-DeepCRISPR.info/DeepxCas9
+python ./Test.py
+
+#
+cd /Paired-Library-DeepCRISPR.info/DeepCas9-NG
+python ./Test.py
+
+#
+conda install keras
+python DeepCpf1.py input_example.txt out.txt
+#input_example.txt文件中有header
